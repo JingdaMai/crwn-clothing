@@ -4,7 +4,7 @@ const buttonStyles = css`
   background-color: black;
   color: white;
   border: none;
-  
+
   &:hover {
     background-color: white;
     color: black;
@@ -16,7 +16,7 @@ const invertedButtonStyles = css`
   background-color: white;
   color: black;
   border: 1px solid black;
-  
+
   &:hover {
     background-color: black;
     color: white;
@@ -56,6 +56,6 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
-  
+
   ${getButtonStyles}
 `;
