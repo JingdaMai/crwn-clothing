@@ -28,7 +28,7 @@ class ShopPage extends React.Component{
     const { updateCollections } = this.props;
     const collectionRef = database.ref('collections');
 
-    collectionRef.on('value', snapshot => {
+    collectionRef.get().then(snapshot => {
       const collectionsMap = convertCollectionsToMap(snapshot.val());
       updateCollections(collectionsMap);
       this.setState({ loading: false });
